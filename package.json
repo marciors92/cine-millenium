@@ -2,11 +2,11 @@
   "name": "cine-millenium",
   "version": "0.1.0",
   "private": true,
-"scripts": {
-  "test": "jest",
-  "build": "next build",
-  "lint": "next lint"
-},
+  "scripts": {
+    "test": "jest",
+    "build": "next build",
+    "lint": "next lint"
+  },
   "dependencies": {
     "next": "16.1.6",
     "react": "19.2.3",
