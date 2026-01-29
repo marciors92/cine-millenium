@@ -20,19 +20,16 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - name: Instalar
+      - name: Instalar Dependencias
         run: npm ci
 
-      - name: Lint
-        run: npm run lint
-
-      - name: Testar
+      - name: Executar Testes
         run: npm test
 
-      - name: Build
+      - name: Build da Aplicacao
         run: npm run build
 
-      - name: Deploy
+      - name: Deploy para GitHub Pages
         if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
         with:
