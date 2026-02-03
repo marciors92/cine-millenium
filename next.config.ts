@@ -1,9 +1,8 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  output: 'export', 
-  images: { unoptimized: true },
-  basePath: '/cine-millenium', 
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    formats: ['image/avif', 'image/webp'], // Otimização de imagens
+  },
 };
 
 export default nextConfig;
